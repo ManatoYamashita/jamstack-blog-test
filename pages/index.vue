@@ -1,21 +1,20 @@
 <template>
-  <h1 class="text-center font-sans text-4xl font-semibold">Nuxt3 Jamstack Blogs</h1>
-  <ul class="mt-16 grid grid-cols-1 gap-8">
-    <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
+  <h1 class="">Jamstack test</h1>
+  <ul class="">
+    <li v-for="blog in data?.contents" :key="blog.id" class="blog-data mt-3">
       <NuxtLink 
         :to="`/${blog.contentId}`"
-        class="flex flex-col gap-4 sm:transition-shadow sm:hover:shadow md:flex-row md:items-center lg:gap-6">
+        class="sm:transition-shadow sm:hover:shadow blog-card">
         <img
           :src="blog.thumbnail?.url"
-          :width="300"
-          class="md:w-1/3 md:flex-none"
+          :width="100"
           alt=""
         />
-        <div class="md:p-2.5 md:pr-0">
-          <div class="inline-block rounded border-2 border-indigo-600 px-1.5 py-0.5 text-sm font-semibold text-indigo-600">
+        <div class="">
+          <!-- <div class="inline-block rounded border-2 border-indigo-600 px-1.5 py-0.5 text-sm font-semibold text-indigo-600">
             category: {{ blog.category?.name }}
-          </div>
-          <div class="mt-2 test-lg font-semibold md:text-xl">
+          </div> -->
+          <div class="mt-2 font-semibold">
             <h2>{{ blog.title }}</h2>
           </div>
           <div class="mt-1 text-sm text-gray-700">
@@ -41,5 +40,10 @@ console.log(data)
   padding: 10px;
   background-color: #f0f0f0;
   border-radius: 10px;
+}
+.blog-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 </style>
