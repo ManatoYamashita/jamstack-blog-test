@@ -1,9 +1,12 @@
+<!-- default.vue -->
+
 <template>
-    <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+    <div>
       <NavBar />
-      <div class="mx-auto max-w-3xl py-10 md:py-16">
+      <main>
         <NuxtPage />
-      </div>
+      </main>
+      <Fotter />
     </div>
 </template>
 
@@ -15,3 +18,9 @@
     },
   };
 </script>
+
+<style>
+  a:hover {
+    color: #42539B;
+  }
+</style>

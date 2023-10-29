@@ -1,7 +1,7 @@
 <template>
     <ul class="">
-      <li v-for="blog in data?.contents" :key="blog.id" class="blog-data mt-3">
-        <NuxtLink :to="`/${blog.contentId}`" class="sm:transition-shadow sm:hover:shadow blog-card">
+      <li v-for="blog in data?.contents" :key="blog.id" class="blog-data">
+        <NuxtLink :to="`/${blog.contentId}`" class="blog-card">
           <img :src="blog.thumbnail?.url" :width="100" alt="" />
           <div class="">
             <!-- 
@@ -9,10 +9,10 @@
                     category: {{ blog.category?.name }}
                 </div> 
             -->
-            <div class="mt-2 font-semibold">
+            <div>
               <h2>{{ blog.title }}</h2>
             </div>
-            <div class="mt-1 text-sm text-gray-700">{{ dateFormat(blog.publishedAt ?? blog.createdAt) }}</div>
+            <div>{{ dateFormat(blog.publishedAt ?? blog.createdAt) }}</div>
           </div>
         </NuxtLink>
       </li>
@@ -35,8 +35,7 @@
       border-radius: 10px;
     }
     .blog-card {
-      display: flex;
-      align-items: center;
       gap: 10px;
+      display: flex;
     }
   </style>
