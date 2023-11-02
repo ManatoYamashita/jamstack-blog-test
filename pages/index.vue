@@ -9,7 +9,7 @@
           <h2>"つながる"にもっと安心を</h2>
         </div>
       </div>
-        <blogs />
+        <BlogComponent />
         <ProfessorComponent />
         <AboutComponent />
     </div>
@@ -43,6 +43,7 @@
     font-size: 3rem;
     margin-bottom: 1rem;
     font-family: Dela Gothic One, monospace;
+    font-weight: normal;
     line-height: 1;
   }
   .cover h2 {
