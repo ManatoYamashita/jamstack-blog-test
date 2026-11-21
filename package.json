@@ -9,10 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
-    "nuxt": "^3.7.0"
+    "nuxt": "^3.21.11"
   },
   "dependencies": {
     "dayjs": "^1.11.9",

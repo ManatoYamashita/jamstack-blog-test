@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import { Blog } from "~~/types/blog";
+import type { Blog } from "~~/types/blog";
 
 const { params } = useRoute();
 
